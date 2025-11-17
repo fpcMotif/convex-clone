@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convex | The backend platform that keeps your app in sync</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+      
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #FAF6ED; /* antiqueWhite */
+      }
+
+      @keyframes marquee-y {
+        0% { transform: translateY(0%); }
+        100% { transform: translateY(-50%); }
+      }
+      .animate-marquee-y {
+        animation: marquee-y 60s linear infinite;
+      }
+
+      @keyframes marquee-y-reverse {
+        0% { transform: translateY(-50%); }
+        100% { transform: translateY(0%); }
+      }
+      .animate-marquee-y-reverse {
+        animation: marquee-y-reverse 60s linear infinite;
+      }
+      
+      @keyframes marquee-x {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-marquee-x {
+        animation: marquee-x 40s linear infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
